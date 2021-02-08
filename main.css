@@ -24,3 +24,13 @@ a:active {
     text-decoration: none;
     color: inherit;
 }
+
+/* Remove styling for sudoku-element input */
+.sudoku-element {
+    border: hidden;
+    outline: none;
+}
+
+#sudoku-grid div{
+    border: solid;
+}
