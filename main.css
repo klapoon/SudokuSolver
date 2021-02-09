@@ -1,3 +1,4 @@
+/* Create CSS grid for sudoku game */
 #sudoku-grid {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -25,12 +26,19 @@ a:active {
     color: inherit;
 }
 
-/* Remove styling for sudoku-element input */
-.sudoku-element {
+/* Styling for sudoku game input fields */
+.sudoku-element input{
     border: hidden;
     outline: none;
+    text-align: center;
 }
 
-#sudoku-grid div{
-    border: solid;
+/* Set border styling for sudoku game */
+.sudoku-element {
+    border-top: 2px solid;
+    border-left: 2px solid;
+}
+
+.sudoku-element:nth-child(3n) {
+    border-right: solid;
 }
