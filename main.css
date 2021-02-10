@@ -5,8 +5,8 @@
 }
 
 @font-face {
-    font-family: MontserratLight;
-    src: url(fonts/Montserrat-Light.ttf);
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Regular.ttf);
 }
 
 @font-face {
@@ -61,7 +61,7 @@ a:active {
 
 /* Set fonts */
 body {
-    font-family: MontserratLight;
+    font-family: Montserrat;
 }
 
 h1 {
