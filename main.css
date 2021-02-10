@@ -1,3 +1,19 @@
+/* Define fonts to be used in site */
+@font-face {
+    font-family: MontserratBoldItalic;
+    src: url(fonts/Montserrat-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: MontserratLight;
+    src: url(fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: Pacifico;
+    src: url(fonts/Pacifico-Regular.ttf);
+}
+
 /* Create CSS grid for sudoku game */
 #sudoku-grid {
     display: grid;
@@ -41,4 +57,17 @@ a:active {
 
 .sudoku-element:nth-child(3n) {
     border-right: solid;
+}
+
+/* Set fonts */
+body {
+    font-family: MontserratLight;
+}
+
+h1 {
+    font-family: Pacifico;
+}
+
+h2 {
+    font-family: MontserratBoldItalic;
 }
