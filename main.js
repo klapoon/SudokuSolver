@@ -2,7 +2,7 @@ let sudoku_grid = document.getElementById("sudoku-grid");
 
 for (let i = 1; i < 82; i++) {
     // Add input fields into sudoku game
-    sudoku_grid.innerHTML += '<div class="sudoku-element" id="sudoku-element-' + i + '"><input type="text" maxlength="1" minlength="1"></div>'
+    sudoku_grid.innerHTML += '<input class="sudoku-element" id="sudoku-element-' + i + '" type="text" maxlength="1" minlength="1">'
     // Add right border to sudoku game
     if (i % 9 === 0) {
         document.getElementById('sudoku-element-' + i).style.borderRight = '0.2rem solid';

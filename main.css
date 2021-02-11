@@ -43,14 +43,11 @@ a:active {
 }
 
 /* Styling for sudoku game input fields */
-.sudoku-element input{
+.sudoku-element {
     border: hidden;
     outline: none;
     text-align: center;
-}
-
-/* Set border styling for sudoku game */
-.sudoku-element {
+    /* Set border styling for sudoku game */
     border-top: 0.2rem solid;
     border-left: 0.2rem solid;
 }
