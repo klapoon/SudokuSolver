@@ -61,13 +61,13 @@ a:active {
 
 /* Set fonts */
 body {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
 }
 
 h1 {
-    font-family: Pacifico;
+    font-family: Pacifico, serif;
 }
 
 h2 {
-    font-family: MontserratBoldItalic;
+    font-family: MontserratBoldItalic, sans-serif;
 }
