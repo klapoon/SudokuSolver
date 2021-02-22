@@ -88,3 +88,11 @@ h1 {
 h2 {
     font-family: MontserratBoldItalic, sans-serif;
 }
+
+#setting-cog {
+    float: right;
+}
+
+#title {
+    float: right;
+}
