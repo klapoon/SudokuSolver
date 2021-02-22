@@ -1,4 +1,4 @@
-/* Define fonts to be used in site */
+/* Define fonts to be used on website */
 @font-face {
     font-family: MontserratBoldItalic;
     src: url(fonts/Montserrat-BoldItalic.ttf);
@@ -14,15 +14,16 @@
     src: url(fonts/Pacifico-Regular.ttf);
 }
 
-/* Create CSS grid for sudoku game */
-#sudoku-grid {
-    display: grid;
-    grid-template-columns: repeat(9, minmax(0, 1fr));
-    grid-template-rows: repeat(9, minmax(0, 1fr));
-    width: 600px;
-    height: 600px;
-    max-width: 90vw;
-    max-height: 90vw;
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+h1 {
+    font-family: Pacifico, serif;
+}
+
+h2 {
+    font-family: MontserratBoldItalic, sans-serif;
 }
 
 /* Remove styling for link*/
@@ -58,35 +59,19 @@ a:active {
     font-size: calc(2vw + 25px);
 }
 
-/* Set font size for small displays */
-@media screen and (max-width: 400px) {
-    .sudoku-element {
-        font-size: 7.5vw;
-    }
-}
-
-/* Set font size for large displays */
-@media screen and (min-width: 1600px) {
-    .sudoku-element {
-        font-size: 3.5em;
-    }
-}
-
 .sudoku-element:nth-child(3n) {
     border-right: solid;
 }
 
-/* Set fonts */
-body {
-    font-family: Montserrat, sans-serif;
-}
-
-h1 {
-    font-family: Pacifico, serif;
-}
-
-h2 {
-    font-family: MontserratBoldItalic, sans-serif;
+/* Create CSS grid for sudoku game */
+#sudoku-grid {
+    display: grid;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    grid-template-rows: repeat(9, minmax(0, 1fr));
+    width: 600px;
+    height: 600px;
+    max-width: 90vw;
+    max-height: 90vw;
 }
 
 #setting-cog {
@@ -104,4 +89,18 @@ h2 {
 
 #description {
     width: 30vw;
+}
+
+@media screen and (max-width: 400px) {
+    .sudoku-element {
+        /* Set font size for small displays */
+        font-size: 7.5vw;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .sudoku-element {
+        /* Set font size for large displays */
+        font-size: 3.5em;
+    }
 }
