@@ -54,6 +54,22 @@ a:active {
     /* Set border styling for sudoku game */
     border-top: 0.2rem solid;
     border-left: 0.2rem solid;
+    /* Set dynamic font size */
+    font-size: calc(2vw + 25px);
+}
+
+/* Set font size for small displays */
+@media screen and (max-width: 400px) {
+    .sudoku-element {
+        font-size: 7.5vw;
+    }
+}
+
+/* Set font size for large displays */
+@media screen and (min-width: 1600px) {
+    .sudoku-element {
+        font-size: 3.5em;
+    }
 }
 
 .sudoku-element:nth-child(3n) {
