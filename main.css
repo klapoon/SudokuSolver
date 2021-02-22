@@ -93,6 +93,15 @@ h2 {
     float: right;
 }
 
-#title {
+#right-align {
     float: right;
+}
+
+#main-page {
+    width: 100vw;
+    height: 100vh;
+}
+
+#description {
+    width: 30vw;
 }

@@ -9,22 +9,24 @@
     <link rel="stylesheet" href="main.css"/>
   </head>
   <body>
-    <img id="setting-cog" src="images/settings-light.png" alt="Settings">
-    <div id="title">
-    <h1>Sudoku Solver</h1>
-    <h2>The Super Simple Sudoku Solving Site</h2>
+    <div id="main-page">
+      <img id="setting-cog" src="images/settings-light.png" alt="Settings">
+      <div id="right-align">
+        <h1>Sudoku Solver</h1>
+        <h2>The Super Simple Sudoku Solving Site</h2>
+        <select>
+          <option value="backtracking">Backtracking</option>
+          <option value="stochastic">Stochastic Search</option>
+        </select>
+        <button>Start!</button>
+        <p id="description">The logic based sudoku puzzle is, in its simplest form, made of a 9x9 grid. In which, the numbers 1 to 9 must be used only once to complete each row, column and 3x3 subgrid.
+          It is thought to originate from the mathematical idea of the latin square, and first appeared in its modern form in a New York-based puzzle magazine in the late 1970s. 
+          A good sudoku puzzle only has a single solution.</p>
+      </div>
+      <div id="sudoku-grid">
+        <!-- Individual sudoku element fields added through Javascript for loop-->
+      </div>
     </div>
-    <div id="sudoku-grid">
-      <!-- Individual sudoku element fields added through Javascript for loop-->
-    </div>
-    <select>
-      <option value="backtracking">Backtracking</option>
-      <option value="stochastic">Stochastic Search</option>
-    </select>
-    <button>Start!</button>
-    <p>The logic based sudoku puzzle is, in its simplest form, made of a 9x9 grid. In which, the numbers 1 to 9 must be used only once to complete each row, column and 3x3 subgrid.
-       It is thought to originate from the mathematical idea of the latin square, and first appeared in its modern form in a New York-based puzzle magazine in the late 1970s. 
-       A good sudoku puzzle only has a single solution.</p>
     <h2>Backtracking</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
       ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
