@@ -16,6 +16,7 @@
 
 body {
     font-family: Montserrat, sans-serif;
+    margin: 0;
 }
 
 h1 {
@@ -89,6 +90,10 @@ a:active {
 
 #description {
     width: 30vw;
+}
+
+#technique-description {
+    background-color: #6687A3;
 }
 
 @media screen and (max-width: 400px) {
