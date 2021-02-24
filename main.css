@@ -17,14 +17,17 @@
 body {
     font-family: Montserrat, sans-serif;
     margin: 0;
+    font-size: 1.25em;
 }
 
 h1 {
     font-family: Pacifico, serif;
+    font-size: 2.25em;
 }
 
 h2 {
     font-family: MontserratBoldItalic, sans-serif;
+    font-size: 1.75em;
 }
 
 /* Remove styling for link*/
@@ -69,14 +72,16 @@ a:active {
     display: grid;
     grid-template-columns: repeat(9, minmax(0, 1fr));
     grid-template-rows: repeat(9, minmax(0, 1fr));
-    width: 600px;
-    height: 600px;
+    width: 650px;
+    height: 650px;
     max-width: 90vw;
     max-height: 90vw;
+    padding: 5vw;
 }
 
 #setting-cog {
     float: right;
+    padding: 1vw;
 }
 
 #right-align {
@@ -89,23 +94,31 @@ a:active {
 }
 
 #description {
-    width: 30vw;
+    width: calc(40vw + 10px);
 }
 
 #technique-description {
     background-color: #6687A3;
+    padding: 1.5vw
 }
 
+/* Large display */
 @media screen and (max-width: 400px) {
     .sudoku-element {
-        /* Set font size for small displays */
         font-size: 7.5vw;
+    }
+    #description {
+        width: 90vw;
     }
 }
 
+/* Small display */
 @media screen and (min-width: 1600px) {
     .sudoku-element {
-        /* Set font size for large displays */
         font-size: 3.5em;
+    }
+
+    #description {
+        width: 40vw;
     }
 }
